@@ -1,0 +1,17 @@
+
+  <div class="new_area">
+    <%= link_to "新規ツイート" , new_tweet_path %>
+  </div>
+  <% @contents.each do |tweet| %>
+  <div class="row flex">
+    <div class="faceimg_area">
+      
+    </div>
+    <div class="content_area">
+      <%= tweet.content %>
+    </div>
+    <div class="delete_area">
+      <%= link_to "削除" , tweet_path(tweet.id), method: :delete %>
+    </div>
+  </div>
+  <% end %>

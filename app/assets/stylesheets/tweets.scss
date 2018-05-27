@@ -1,0 +1,39 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.flex {
+  display: flex;
+  
+}
+
+.row {
+    width: 500px;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.new_area {
+  padding: 10px;
+}
+
+.faceimg_area {
+  width: 70px;
+  height: 70px;
+  background-color: #222;
+}
+
+.content_area {
+  padding: 4px;
+  padding-left: 10px;
+  width: 360px;
+  word-wrap: break-word;
+}
+
+.delete_area {
+  padding: 4px;
+  padding-left: 10px;
+}

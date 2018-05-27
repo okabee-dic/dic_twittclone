@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tweetclone</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="main_container">
+    <header class="header">
+      <nav class="flex">
+        <div class="header_item">
+          <h1><%= link_to "TwittClone" , tweets_path %></h1>
+        </div>
+        <div class="header_item">
+          <%= link_to "新規ツイート" , new_tweet_path %>
+        </div>
+      </nav>
+    </header>
+    <section class="content_section">
+    <%= yield %>
+    </section>
+      <footer class="footer">
+        <nav>
+          <div>
+            Copyright(C) 2018- TwittClone
+          </div>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
