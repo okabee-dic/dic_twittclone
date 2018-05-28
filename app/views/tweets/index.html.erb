@@ -11,6 +11,7 @@
       <%= tweet.content %>
     </div>
     <div class="delete_area">
+      <%= link_to "編集",  edit_tweet_path(tweet.id) %><br>
       <%= link_to "削除" , tweet_path(tweet.id), method: :delete %>
     </div>
   </div>
